@@ -5,7 +5,7 @@
 <head>
   <link rel="stylesheet" href="fishcreek.css">
   <meta charset="UTF-8">
-  <title>Fish Creek Animal Clinic</title>
+  <title>Contact</title>
 </head>
 
 <body>
@@ -22,18 +22,17 @@
       </ul>
     </nav>
     <main>
-      <video width="200" height="120" controls="controls">
-        <source src="images/sparky.m4v" type="video/m4v">
-        <source src="images/sparky.mov" type="video/mov">
-      </video>
-      <p><a href="contact">Contact</a> us if you have a question that you would like answered here.</p>
-      <dl>
-        <dt>Question: Our dog, Sparky, likes to eat whatever the kids are snacking on. Is it OK for the dog to eat
-          chocolate?”</dt>
-        <dd>Answer: Chocolate is toxic to dogs. Please do not feed your dog chocolate. Try playing a game with your
-          children —
-          when you feed them people treats, they can feed Sparky dog treats. </dd>
-      </dl>
+      <h2>Contact Animal Clinic</h2>
+      <p>Required information is marked with an asterisk (*).</p>
+      <form method="POST" name="fishcreek" id="fishcreek" action="http://webdevbasics.net/scripts/fishcreek.php">
+        <label for="Name">*Name: </label>
+        <input type="text" name="Name" id="Name" required="required">
+        <label for="e-mail">*E-mail: </label>
+        <input type="email" name="e-mail" id="e-mail" required="required">
+        <label for="comments">*Comments: </label>
+        <textarea name="comments" id="comments" rows="2" cols="20"></textarea>
+        <input type="submit" id="sendData" name="sendData" value="Submit">
+      </form>
     </main>
     <footer>
       <p>

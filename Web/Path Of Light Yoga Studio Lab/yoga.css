@@ -1,22 +1,50 @@
 body {
-  background-color: #F5F5F5;
+  background-color: #3F2860;
   color: #3F2860;
   font-family: arial, helvetica, sans-serif;
 } 
 
 header {
   background-color: #9BC1C2;
-  text-align: center;
+  background-image: url(images/lilyheader.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 150px;
+}
+
+main {
+  padding-right: 2em;
+  padding-left: 2em;
+  margin-left: 170;
+  padding-top: 1em;
 }
 
 h1 {
-  line-height:200%;
+  padding-top: 50px;
+  padding-left:2em;
 }
 
 nav {
-  text-align: center;
   font-style: bold;
+  padding: 1em;
+  float: left;
+  width: 160px;
 }
+
+nav a{
+ display: block;
+ text-decoration: true;
+ text-align: center;
+ border: 3px outset #CCCCCC;
+ font-style: bold;
+ padding: 1em;
+ margin-bottom: 1em;
+} 
+
+nav a:link{color:#3F2860;}
+nav a:visited{color:#497777; border: 3px inset #333333 }
+nav a:hover{color:#A26100;}
+nav ul{padding-left: 0; list-style-type: none; }
 
 a {
   text-decoration: none;
@@ -26,15 +54,91 @@ a {
   font-style: italic;
 }
 
+.floatleft{
+  float: left;
+  margin-right:4em;
+}
+
+/* img { */
+/*   padding-left:2em; */
+/*   padding-right: 2em; */
+/* } */
+
+.clear {
+  clear: both;
+  margin-left: 8em;
+}
+
+header, nav, main, footer { display: block; }
+
 footer {
   text-align: center;
   size: 0.60em;
   background-color: #9BC1C2;
+  padding: 1em;
 }
 
 #wrapper {
-  width: 80%;
+  min-width: 1200px;
+  max-width: 1480px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #F0F0F0;
+  background-color: #F5F5F5;
+}
+
+*{box-sizing: border-box;}
+
+.myclass {
+  margin-left: 9em;
+}
+
+table {
+  text-align: center;
+  border: 1px solid #3F2860;
+  width: 60%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+td, th {
+  padding: 5px;
+  border: 1px solid #3F2860;
+}
+tr:nth-of-type(even){
+  background-color: #9BC1C2;
+}
+caption {
+  font-style: bold;
+  margin: 1em;
+  font-size:120%;
+}
+
+audio{
+  margin: 1em;
+  display: block;
+}
+
+label{
+  float: left;
+  text-align: right;
+  font-weight: bold;
+  width:10em;
+  padding-right: 1em;
+}
+
+input {
+  display: block;
+  margin-bottom: 2em;
+}
+
+textarea {
+  display: block;
+  margin-bottom: 2em;
+}
+
+form {
+  padding: 3em;
+}
+
+#mySubmit {
+  margin-left: 12em;
 }
