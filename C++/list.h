@@ -28,14 +28,13 @@ void tailPush(node **href, int data) {
   newNode->next = NULL;
 
   node *current = *href;
-  if (*href == NULL)
+  if (*href == NULL) {
     *href = newNode;
-  else {
-    while (current->next) {
-      current = current->next;
-    }
-    current->next = newNode;
+    return;
   }
+  while (current->next)
+    current = current->next;
+  current->next = newNode;
 }
 
 // Createlist A linked List Using Push
@@ -137,7 +136,6 @@ void sortList(node **href) {
 
 // Swap Nodes
 void swapNodes(node **href, node *nodeA, node *nodeB) {
-
   if (*href == NULL)
     return; // Empty list
   if (nodeA == nodeB)
@@ -210,27 +208,6 @@ void swapNodes(node **href, node *nodeA, node *nodeB) {
   }
 }
 
-void sortList(node **href) {
-  node *current = *href;
-  node *head = *href;
-  node *nodeA, *nodeB;
-  int len = lenList(current);
-  int swap_made;
-  do {
-    swap_made = 0;
-    current = *href;
-    while (current->next) {
-      if (current->data > (current->next)->data) {
-        nodeA = current;
-        nodeB = current->next;
-        swapList(&head, &nodeA, &nodeB);
-        swap_made = 1;
-      } else
-        current = current->next;
-    }
-  } while (swap_made);
-}
-
 // Create A New Node
 node *createNewNode() {
   node *newNode = (node *)malloc(sizeof(node));
@@ -265,4 +242,27 @@ void sortedInsert(node **href, node *newNode) {
       current->next = newNode;
     }
   }
+}
+
+// Append List B to List A
+void append(node **href_A, node **href_B) {
+  // Case 1: List B is empty, or A&B are empty
+  if (!*href_B)
+    return;
+  if (!*href_B && !*href_A)
+    return;
+
+  // Case 2: List A is empty
+  if (!*href_A) {
+    *href_A = *href_B;
+    *href_B = NULL;
+    return;
+  }
+
+  // Case 3: Both Lists Are not empty
+  node *current = *href_A;
+  while (current->next)
+    current = current->next;
+  current->next = *href_B;
+  *href_B = NULL;
 }
