@@ -1,12 +1,13 @@
-#include "list.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 typedef struct node {
   int data;
-  stuct node *next;
+  struct node *next;
 } node;
 
-void push(node *node, int data) {}
+void tailpush(node *node, int data) {
+  node *newNode = (node *)newNode(sizeof(node));
+}
 
 int main(void) {}
