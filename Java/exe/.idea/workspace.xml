@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eb7f4ddf-1157-4891-b1a7-15ea97a88fbd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.attach_pid1061069" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.attach_pid25742" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/;" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lab7/CreditCardPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lab7/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lab7/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab6/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab6/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab6/UserAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test2/test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.apt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/median/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/median/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/array/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/append/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/array/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lab1/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lab2/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lab3/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/median/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/words/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/exe-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/exe-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-array.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-array.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/array.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/array.AppTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/array/AppTest.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2100CdlfVdBt3rK5ba1JMFNbg0B" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Application.Driver">
+    <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lab5.App" />
+      <module name="exe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="median.App" />
+      <module name="exe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="median.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab6.App" />
+      <module name="exe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lab7.Driver" />
+      <module name="exe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="median in exe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="median.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="median" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Driver" />
+        <item itemvalue="Application.App (2)" />
+        <item itemvalue="Application.App (1)" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.median in exe" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb7f4ddf-1157-4891-b1a7-15ea97a88fbd" name="Changes" comment="" />
+      <created>1637062574531</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637062574531</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/exe$median_in_exe.ic" NAME="median in exe Coverage Results" MODIFIED="1637177697970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>median.*</FILTER>
+    </SUITE>
+  </component>
+</project>

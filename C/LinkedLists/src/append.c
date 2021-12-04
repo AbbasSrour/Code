@@ -20,7 +20,7 @@ void tailpush(node **href, int value) {
   }
   while (current->next)
     current = current->next;
-  current->next = newNode;
+  *href->next = newNode;
 }
 
 node *createList() {
