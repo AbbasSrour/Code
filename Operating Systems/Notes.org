@@ -1,45 +1,7 @@
 #+TITLE: Operating Systems:
-* Processes:
-** Def:
-    An instance of an executing program is a process consisting of an
-    address space, one or more threads of control, files on the storage,
-    and sockets.
-** Threads: 
-*** Def:
-    Each thread contains unique execution context, in other words fully describes
-    program state, ie: Program Counters, Registers, Execution Flags, Stack.
-*** Stack Pointers:
-    Stack Pointers holds the address of the top of the stack, and it maybe
-    defined by the ISA or by the program compiler.
-*** Registers:
-    The registers holds the root state of the thread, while the rest is in
-    the memory, and the address of excuting instructions is held in each
-    thread.
-*** Execution Flags:
-    The thread is executing on a processer when it is resident in the
-    process registers.
-** Addresse Space:
-      Processes are excuted in an address space that is distinct from the memory space
-      of the physical machine, which the OS specifies.
-** Dual Mode Protection:
-      Only the OS has the ability to access certain resources, and the OS protects itself 
-      and the hardware from user processes access and manipulating system resources.
-
-* Memory:
-** Def: 
-      Memory is where the OS holds all the data coresponding to each process.
-      Each process has its own section of the memory that is partitioned to
-      four parts.
-** Partitions:
-*** Stack
-*** Heap
-*** Static Data
-*** Code Instructions
-
-* Concurrency:
-** Def:
-      Concurrency is running and manging multiple computations at the same
-      time on the same processer, giving the illusion of them being run
-      simultaneously.
-
-* Multi Threaded Processes:
+* Operating Systems: 
+** Def : Special layer of software that provides application software access to hardware resources
+** Usage:
+*** Provides software abstraction for File Systems, Processes,Threads, VMs...
+*** Manage Resources
+*** Scheduling, Concurrency, Transactions, Security

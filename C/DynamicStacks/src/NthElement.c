@@ -23,6 +23,7 @@ cell *nth(cell *href, int n) {
     if (i == n)
       return current;
   }
+  return NULL;
 }
 
 int main(int argc, char **argv) {
