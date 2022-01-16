@@ -1,0 +1,146 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Q1 Define a structure type called DNA to manipulate a linked list
+// representing a strand DNA.
+typedef struct ADN {
+  char molecule;
+  struct ADN *next;
+} ADN;
+
+// Q2 Write a function int is_empty (DNA * l) which returns 1 if the linked list
+// pointed to by l is empty, 0 otherwise
+int est_vide(ADN *l) {
+  if (l == NULL)
+    return 1;
+  else
+    return 0;
+}
+
+// Q3 Give a DNA function * initializes (char c) initialization of a linked list
+// associated with single nucleotide marked with c.
+ADN *initialise(char c) {
+  ADN *head;
+  head = malloc(sizeof(ADN *));
+  if (!head)
+    return NULL;
+
+  head->molecule = c;
+  head->next = NULL;
+  return head;
+}
+
+// Q4 Write an int add_base_tete function (DNA ** l, char c) which adds the
+// nucleotide c at the head from list l. The function returns 1 if the addition
+// could be made or 0 in the event of an error.
+int ajout_base_tete(ADN **l, char c) {
+  ADN *newNode;
+  newNode = malloc(sizeof(ADN *));
+  if (!newNode)
+    return 0;
+
+  newNode->molecule = c;
+  newNode->next = *l;
+  *l = newNode;
+  return 1;
+}
+
+// Q5 Write a void function display_strand (DNA * l) which displays the DNA
+// strand pointed to by l
+void affiche_brin(ADN *l) {
+  ADN *current = l;
+  if (l == NULL)
+    return;
+  printf("The Molecules in the DNA Strand are: \n");
+  int i = 0;
+  while (current) {
+    printf("Molecule %d is %c\n", i, current->molecule);
+    i++;
+    current = current->next;
+  }
+}
+
+// Q6 Write a function void libere_brin (DNA ** l) which frees the memory
+// allocated to store all the information for the DNA strand pointed to by l.
+void libere_brin(ADN **l) {
+  ADN *temp;
+  ADN *current = *l;
+  if (est_vide(*l) == 1)
+    return;
+  while (current) {
+    temp = current->next;
+    free(current);
+    current = temp;
+  }
+  *l = NULL;
+}
+
+// Q8 Write a function int verifie_brin (DNA * l) which returns 1 if the values
+// contained in the list pointed to by l are correct (a DNA strand can
+// only contain 4 types of values, see upper). The function returns 0 if the
+// list is not correct.
+
+int verifie_brin(ADN *l) {
+  ADN *current = l;
+  // Can Be Implented In A better way
+  while (current) {
+    if (current->molecule != 'A' && current->molecule != 'C' &&
+        current->molecule != 'G' && current->molecule != 'T')
+      return 0;
+  }
+  return 1;
+}
+
+int main() {
+  // Q7 Add / complete the main function to test these first functions and make
+  // sure they are correct functioning.
+  ADN *myDNA = NULL;
+
+  // test Q2
+  int test = est_vide(myDNA);
+  if (test)
+    printf("Empty Function Works Correctly!\n");
+  else
+    printf("Q2 NOPE\n");
+
+  // test Q3
+  myDNA = initialise('A');
+  if (!myDNA)
+    printf("Q3 NOPE\n");
+  else
+    printf("initialise Function Works Correctly! %c\n", myDNA->molecule);
+
+  // test Q4
+  test = ajout_base_tete(&myDNA, 'C');
+  if (test)
+    printf("Push Function Works Correctly! %c\n", (myDNA->next)->molecule);
+  else
+    printf("Q4 NOPE\n");
+
+  // test Q5
+  ajout_base_tete(&myDNA, 'G');
+  ajout_base_tete(&myDNA, 'T');
+  affiche_brin(myDNA);
+
+  // test Q6
+  libere_brin(&myDNA);
+  test = est_vide(myDNA);
+  if (test)
+    printf("Free Function Works Correctly!\n");
+  else
+    printf("Q6 NOPE\n");
+
+  // test Q8
+  ajout_base_tete(&myDNA, 'A');
+  ajout_base_tete(&myDNA, 'C');
+  ajout_base_tete(&myDNA, 'G');
+  ajout_base_tete(&myDNA, 'T');
+  // ajout_base_tete(&myDNA, 'D');
+  test = verifie_brin(myDNA);
+  if (test)
+    printf("Check Function Works Correctly!\n");
+  else
+    printf("Q6 NOPE\n");
+
+  return 0;
+}
