@@ -1,7 +1,0 @@
-#+TITLE: Operating Systems:
-* Operating Systems: 
-** Def : Special layer of software that provides application software access to hardware resources
-** Usage:
-*** Provides software abstraction for File Systems, Processes,Threads, VMs...
-*** Manage Resources
-*** Scheduling, Concurrency, Transactions, Security
